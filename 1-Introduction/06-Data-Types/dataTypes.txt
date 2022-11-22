@@ -1,4 +1,5 @@
 PRIMITIVE DATA TYPE
+When you specify data type you win performance.
 
 - Integer -> It's a lot of integer data types because it is designed to save memory and improve performance.
     - uint

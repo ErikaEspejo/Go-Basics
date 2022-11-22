@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	a := 20
@@ -35,5 +38,49 @@ func main() {
 
 	result = 5 % 2
 	fmt.Println("Module:", result)
+
+	// INCREMENTAL
+	a++
+	fmt.Println("Incremental:", a)
+
+	// DECREMENTAL
+	a--
+	fmt.Println("Decremental:", a)
+
+	// Challenge -> Calculate area of circle, square, rectangle and trapezium
+	fmt.Println("\n---- CHALLENGES ----")
+	// SQUARE
+	fmt.Println("-- Square --")
+	side := 10
+	squareArea := side * side
+	fmt.Println("Side:", side)
+	fmt.Println("Square Area:", squareArea)
+
+	// CIRCLE
+	fmt.Println("-- Circle --")
+	radius := 10
+	circleArea := math.Phi * math.Pow(float64(radius), 2)
+	fmt.Println("Radius:", radius)
+	fmt.Println("Circle Area:", circleArea)
+
+	// RECTANGLE
+	fmt.Println("-- Rectangle --")
+	base := 10
+	height := 20
+	rectangleArea := base * height
+	fmt.Println("Base:", base)
+	fmt.Println("Height:", height)
+	fmt.Println("Rectangle Area:", rectangleArea)
+
+	// TRAPEZIUM
+	fmt.Println("-- Trapezium --")
+	minorBase := 10
+	majorBase := 20
+	height = 20
+	trapeziumArea := (minorBase + majorBase) * height / 2
+	fmt.Println("Minor Base:", minorBase)
+	fmt.Println("Major Base:", majorBase)
+	fmt.Println("Height:", height)
+	fmt.Println("Trapezium Area:", trapeziumArea)
 
 }

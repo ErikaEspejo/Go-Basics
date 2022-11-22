@@ -13,12 +13,12 @@ func main() {
 
 	fmt.Println(name1, name2, name3)
 
-	// VARIABLES -> Declared without initialization, this way it have a default value.
+	// VARIABLES -> Declared without initialization, this way it have a default value -> ZERO VALUES
 
-	var a int     // Default -> 0
-	var b float32 // Default -> 0
-	var c string  // Default -> ""
-	var d bool    // Default -> false
+	var a int     // Zero Value -> 0
+	var b float32 // Zero Value -> 0
+	var c string  // Zero Value -> ""
+	var d bool    // Zero Value -> false
 
 	fmt.Println(a, b, c, d)
 
