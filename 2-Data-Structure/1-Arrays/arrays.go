@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Arrays -> Store data of an specific data type. When the array has no information, it will store default values.
+	// Arrays -> Store data of an specific data type. When the array has no information, it will store zero values.
 	var numbers [5]int
 	fmt.Println(numbers)
 	// Prints [0 0 0 0 0]
@@ -36,7 +36,8 @@ func main() {
 		"Black",
 		"Blue",
 	}
-	fmt.Println(colors, len(colors)) // len function get the array lenght
+	fmt.Println(colors, "Length:", len(colors))       // len function get the array lenght
+	fmt.Println(colors, "Max capacity:", cap(colors)) // cap function get the array max capacity
 
 	// Arrays with defined index
 	currency := [...]string{
